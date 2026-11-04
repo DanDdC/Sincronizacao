@@ -1,0 +1,79 @@
+Script started on 2026-11-04 14:34:44-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="176" LINES="12"]
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ exit
+[?2004l
+exit
+
+Script done on 2026-11-04 14:34:47-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-11-04 14:34:03-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="176" LINES="12"]
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mdate; whoami; pwd; uname -a; gcc --version | head -1[27mdate; whoami; pwd; uname -a; gcc --version | head -1
+[?2004l
+Wed Nov  4 14:34:08 -03 2026
+danie
+/mnt/c/Users/danie/Sincronizacao
+Linux PCDEDANIEL 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 GNU/Linux
+gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mscript -a evidencias.log[27mscript -a evidencias.log
+[?2004l
+Script started, output log file is 'evidencias.log'.
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ exit
+[?2004l
+exit
+Script done.
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ exit
+[?2004l
+exit
+
+Script done on 2026-11-04 14:34:49-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-11-04 14:35:36-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="176" LINES="12"]
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ exit
+[?2004l
+exit
+
+Script done on 2026-11-04 14:35:42-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-11-04 14:38:53-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="176" LINES="12"]
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ exitcho "exit code: $?"xit[K[Kexitcho "exit code: $?"[10P./sync_carmake check[K cleanfile sync_car.c sync_car.h Makefile README.md .gitignore
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pdate; whoami; pwd; uname -a; gcc --version | head -1exit[Kdate; whoami; pwd; uname -a; gcc --version | head -1
+[?2004l
+Wed Nov  4 14:38:59 -03 2026
+danie
+/mnt/c/Users/danie/Sincronizacao
+Linux PCDEDANIEL 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 GNU/Linux
+gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ date; whoami; pwd; uname -a; gcc --version | head -1exit[Kcho "exit code: $?"[10P./sync_carmake check[K cleanfile sync_car.c sync_car.h Makefile README.md .gitignore
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pdate; whoami; pwd; uname -a; gcc --version | head -1exit[Kdate; whoami; pwd; uname -a; gcc --version | head -1file sync_car.c sync_car.h Makefile README.md .gitignore
+[?2004l
+sync_car.c: C source, ASCII text
+sync_car.h: C source, ASCII text
+Makefile:   makefile script, ASCII text
+README.md:  ASCII text
+.gitignore: ASCII text
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ file sync_car.c sync_car.h Makefile README.md .gitignore
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pdate; whoami; pwd; uname -a; gcc --version | head -1exit[Kcho "exit code: $?"[10P./sync_carmake check[K cleanfile sync_car.c sync_car.h Makefile README.md .gitignore
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean[K
+[?2004l
+rm -f sync_car sync_car.o sync_car-runner.o
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ make cleanfile sync_car.c sync_car.h Makefile README.md .gitignore
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pdate; whoami; pwd; uname -a; gcc --version | head -1exit[Kcho "exit code: $?"[10P./sync_carmake check[K check[K clean[K
+[?2004l
+cc -std=gnu11 -O2 -Wall -pthread -c -o sync_car.o sync_car.c
+cc -std=gnu11 -O2 -Wall -pthread -c -o sync_car-runner.o sync_car-runner.c
+cc  -o sync_car sync_car.o sync_car-runner.o -pthread
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ make cleanfile sync_car.c sync_car.h Makefile README.md .gitignore
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pdate; whoami; pwd; uname -a; gcc --version | head -1exit[Kcho "exit code: $?"[10P./sync_carmake check[K check
+[?2004l
+cc -std=gnu11 -O2 -Wall -Wextra -Werror -pthread -c -o /dev/null sync_car.c
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ make check[K cleanfile sync_car.c sync_car.h Makefile README.md .gitignore
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pdate; whoami; pwd; uname -a; gcc --version | head -1exit[Kcho "exit code: $?"[10P./sync_carmake check[K clean[K check./sync_car
+[?2004l
+car entering station with 47 free seats
+Error: station_load_car returned early!
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ ./sync_carmake check[K cleanfile sync_car.c sync_car.h Makefile README.md .gitignore
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean[K[K check./sync_car[K./sync_carmake check[K cleanfile sync_car.c sync_car.h Makefile README.md .gitignore
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pdate; whoami; pwd; uname -a; gcc --version | head -1exit[Kcho "exit code: $?"[10P./sync_carmake check./sync_carecho "exit code: $?"
+[?2004l
+exit code: 1
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ echo "exit code: $?"[10P./sync_car[K[K[K[K[K[K[K[K[K[Kexit
+[?2004l
+exit
+
+Script done on 2026-11-04 14:39:40-03:00 [COMMAND_EXIT_CODE="0"]
