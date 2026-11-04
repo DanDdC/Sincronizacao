@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0
 #ifndef SYNC_CAR_H
 #define SYNC_CAR_H
 
@@ -6,9 +7,11 @@
 struct station {
     pthread_mutex_t lock;
     pthread_cond_t car_arrived;
+    pthread_cond_t passenger_boarded;
 
     int free_seats;
     int waiting;
+    int boarding;
     int car_present;
 };
 
