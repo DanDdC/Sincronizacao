@@ -79,21 +79,26 @@ exit
 Script done on 2026-11-04 14:39:40-03:00 [COMMAND_EXIT_CODE="0"]
 Script started on 2026-11-04 15:06:02-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="176" LINES="12"]
 [?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mdate; whoami; pwd; uname -a; gcc --version | head -1[27mdate; whoami; pwd; uname -a; gcc --version | head -1
-[?2004lWed Nov  4 15:06:07 -03 2026
+[?2004l
+Wed Nov  4 15:06:07 -03 2026
 danie
 /mnt/c/Users/danie/Sincronizacao
 Linux PCDEDANIEL 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 GNU/Linux
 gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
 [?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mmake clean[27mmake clean
-[?2004lrm -f sync_car sync_car.o sync_car-runner.o
+[?2004l
+rm -f sync_car sync_car.o sync_car-runner.o
 [?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ make
-[?2004lcc -std=gnu11 -O2 -Wall -pthread -c -o sync_car.o sync_car.c
+[?2004l
+cc -std=gnu11 -O2 -Wall -pthread -c -o sync_car.o sync_car.c
 cc -std=gnu11 -O2 -Wall -pthread -c -o sync_car-runner.o sync_car-runner.c
 cc  -o sync_car sync_car.o sync_car-runner.o -pthread
 [?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ make check
-[?2004lcc -std=gnu11 -O2 -Wall -Wextra -Werror -pthread -c -o /dev/null sync_car.c
+[?2004l
+cc -std=gnu11 -O2 -Wall -Wextra -Werror -pthread -c -o /dev/null sync_car.c
 [?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7m./sync_car[27m./sync_car
-[?2004lcar entering station with 36 free seats
+[?2004l
+car entering station with 36 free seats
 car departed station with 36 new passenger(s) (expected 36)
 car entering station with 49 free seats
 car departed station with 49 new passenger(s) (expected 49)
@@ -101,9 +106,12 @@ car entering station with 15 free seats
 car departed station with 15 new passenger(s) (expected 15)
 Looks good!
 [?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mecho "exit code: $?"[27mecho "exit code: $?"
-[?2004lexit code: 0
-[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mgrep -n 'pthread_mutex_t\|pthread_cond_t\|boarding\|free_seats\|waiting\|car_present' sync_car.h sync_car.c[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -n 'pthread_mutex_t\|pthread_cond_t\|boarding\|free_seats\|waiting\|car_present' sync_car.h sync_car.c
-[?2004l[35m[Ksync_car.h[m[K[36m[K:[m[K[32m[K15[m[K[36m[K:[m[K    [01;31m[Kpthread_mutex_t[m[K lock;       /* unico lock da estacao */
+[?2004l
+exit code: 0
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mgrep -n 'pthread_mutex_t\|pthread_cond_t\|boarding\|free_seats\|waiting\|car_present' sync_car.h sync_car.c[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -n 'pthread_mutex_t\|pthread_cond_t\|boarding\|free_seats\|waiting\|car_present' sync_car.h sync_car.c
+[?2004l
+[35m[Ksync_car.h[m[K[36m[K:[m[K[32m[K15[m[K[36m[K:[m[K    [01;31m[Kpthread_mutex_t[m[K lock;       /* unico lock da estacao */
 [35m[Ksync_car.h[m[K[36m[K:[m[K[32m[K16[m[K[36m[K:[m[K    [01;31m[Kpthread_cond_t[m[K car_arrived;      /* passageiros aguardam carro/assento */
 [35m[Ksync_car.h[m[K[36m[K:[m[K[32m[K17[m[K[36m[K:[m[K    [01;31m[Kpthread_cond_t[m[K passenger_boarded; /* carro aguarda on_board */
 [35m[Ksync_car.h[m[K[36m[K:[m[K[32m[K19[m[K[36m[K:[m[K    int [01;31m[Kfree_seats[m[K;   /* assentos livres no carro atual */
@@ -127,9 +135,165 @@ Looks good!
 [35m[Ksync_car.c[m[K[36m[K:[m[K[32m[K50[m[K[36m[K:[m[K    station->[01;31m[Kboarding[m[K++;
 [35m[Ksync_car.c[m[K[36m[K:[m[K[32m[K59[m[K[36m[K:[m[K    if (station->[01;31m[Kboarding[m[K > 0)
 [35m[Ksync_car.c[m[K[36m[K:[m[K[32m[K60[m[K[36m[K:[m[K        station->[01;31m[Kboarding[m[K--;
-[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mgrep -ni 'sem_' sync_car.c sync_car.h || echo 'semaphore: not found'[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -ni 'sem_' sync_car.c sync_car.h || echo 'semaphore: not found'
-[?2004lsemaphore: not found
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mgrep -ni 'sem_' sync_car.c sync_car.h || echo 'semaphore: not found'[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -ni 'sem_' sync_car.c sync_car.h || echo 'semaphore: not found'
+[?2004l
+semaphore: not found
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mexit[27mexit
+[?2004l
+exit
+
+Script done on 2026-11-04 15:06:58-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-11-04 16:13:59-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="176" LINES="12"]
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mdate; whoami; pwd; uname -a; gcc --version | head -1[27mdate; whoami; pwd; uname -a; gcc --version | head -1
+[?2004l
+Wed Nov  4 16:14:02 -03 2026
+danie
+/mnt/c/Users/danie/Sincronizacao
+Linux PCDEDANIEL 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 GNU/Linux
+gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mmake[27mmake
+[?2004l
+cc -std=gnu11 -O2 -Wall -pthread -c -o sync_car.o sync_car.c
+cc -std=gnu11 -O2 -Wall -pthread -c -o sync_car-runner.o sync_car-runner.c
+cc  -o sync_car sync_car.o sync_car-runner.o -pthread
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ make check
+[?2004l
+cc -std=gnu11 -O2 -Wall -Wextra -Werror -pthread -c -o /dev/null sync_car.c
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mfor i in $(seq 1 100); do ./sync_car > /dev/null 2>&1 || { echo "falha na iteracao $i"; exit 1; }; done[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in $(seq 1 100); do ./sync_car > /dev/null 2>&1 || { echo "falha na iteracao $i"; exit 1; }; done
+[?2004l
+echo "100 iteracoes OK"
+^C
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mfor i in $(seq 1 100); do ./sync_car > /dev/null 2>&1 || { echo "falha na iteracao $i"; exit 1; }; done[27m
+
+[7mecho "100 iteracoes OK"[27m[A
+]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ for i in $(seq 1 100); do ./sync_car > /dev/null 2>&1 || { echo "falha na iteracao $i"; exit 1; }; done
+
+echo "100 iteracoes OK"
+[?2004l
+100 iteracoes OK
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mgcc -std=gnu11 -O2 -Wall -pthread -I. -o /tmp/simul /tmp/simul.c sync_car.c[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -std=gnu11 -O2 -Wall -pthread -I. -o /tmp/simul /tmp/simul.c sync_car.c
+[?2004l
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mecho "simul exit: $?"[27mecho "simul exit: $?"
+[?2004l
+simul exit: 0
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mls -la[27mls -la
+[?2004l
+total 564
+drwxrwxrwx 1 danie danie   4096 Nov  4 16:14  [0m[34;42m.[0m
+drwxrwxrwx 1 danie danie   4096 Nov  4 15:39  [34;42m..[0m
+drwxrwxrwx 1 danie danie   4096 Nov  4 16:03  [34;42m.git[0m
+-rwxrwxrwx 1 danie danie    148 Nov  4 03:20  [01;32m.gitattributes[0m
+-rwxrwxrwx 1 danie danie    435 Nov  4 05:28  [01;32m.gitignore[0m
+-rwxrwxrwx 1 danie danie 128291 Nov  4 02:37  [01;32m5_Syncronization.docx.pdf[0m
+-rwxrwxrwx 1 danie danie 129019 Nov  4 02:38  [01;32m'Captura de tela 2026-11-04 023804.png'[0m
+-rwxrwxrwx 1 danie danie  33507 Nov  4 02:38  [01;32m'Captura de tela 2026-11-04 023824.png'[0m
+-rwxrwxrwx 1 danie danie  21466 Nov  4 02:38  [01;32mGuia_de_Relatorios.docx[0m
+-rwxrwxrwx 1 danie danie 187602 Nov  4 02:37  [01;32mGuia_de_Relatorios.docx.pdf[0m
+-rwxrwxrwx 1 danie danie    592 Nov  4 03:16  [01;32mMakefile[0m
+-rwxrwxrwx 1 danie danie     36 Nov  4 14:40  [01;32mREADME.md[0m
+-rwxrwxrwx 1 danie danie  15144 Nov  4 15:09  [01;32mevidencias.log[0m
+drwxrwxrwx 1 danie danie   4096 Nov  4 03:17  [34;42mprints[0m
+-rwxrwxrwx 1 danie danie  17544 Nov  4 16:14  [01;32msync_car[0m
+-rwxrwxrwx 1 danie danie   4230 Nov  4 02:37  [01;32msync_car-runner.c[0m
+-rwxrwxrwx 1 danie danie   7976 Nov  4 16:14  [01;32msync_car-runner.o[0m
+-rwxrwxrwx 1 danie danie   1437 Nov  4 15:08  [01;32msync_car.c[0m
+-rwxrwxrwx 1 danie danie    519 Nov  4 15:08  [01;32msync_car.h[0m
+-rwxrwxrwx 1 danie danie   2584 Nov  4 16:14  [01;32msync_car.o[0m
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ exit
+[?2004l
+exit
+
+Script done on 2026-11-04 16:15:55-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-11-04 22:58:14-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="176" LINES="12"]
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mdate; whoami; pwd; uname -a; gcc --version[27m
+[7mmake clean && make && make check && ./sync_car; echo "exit code: $?"[27m[Adate; whoami; pwd; uname -a; gcc --version
+make clean && make && make check && ./sync_car; echo "exit code: $?"
+[?2004lWed Nov  4 22:58:25 -03 2026
+danie
+/mnt/c/Users/danie/Sincronizacao
+Linux PCDEDANIEL 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 GNU/Linux
+gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+rm -f sync_car sync_car.o sync_car-runner.o
+cc -std=gnu11 -O2 -Wall -pthread -c -o sync_car.o sync_car.c
+cc -std=gnu11 -O2 -Wall -pthread -c -o sync_car-runner.o sync_car-runner.c
+cc  -o sync_car sync_car.o sync_car-runner.o -pthread
+cc -std=gnu11 -O2 -Wall -Wextra -Werror -pthread -c -o /dev/null sync_car.c
+car entering station with 9 free seats
+car departed station with 9 new passenger(s) (expected 9)
+car entering station with 46 free seats
+car departed station with 46 new passenger(s) (expected 46)
+car entering station with 16 free seats
+car departed station with 16 new passenger(s) (expected 16)
+car entering station with 31 free seats
+car departed station with 29 new passenger(s) (expected 29)
+Looks good!
+exit code: 0
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mgcc -o /tmp/limite /tmp/limite.c sync_car.c -I. -pthread && /tmp/limite; echo "limite exit: $?"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -o /tmp/limite /tmp/limite.c sync_car.c -I. -pthread && /tmp/limite; echo "limite exit: $?"
+[?2004lLIMITE OK: 0, -5 e 200 assentos retornaram sem travar
+limite exit: 0
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7msha256sum sync_car-runner.c[27msha256sum sync_car-runner.c
+[?2004l9597e03794b78aaa77f0219c5e5f91bf202c31b47e50ab5cc2fc192003129679  sync_car-runner.c
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mgrep -c pthread_mutex_t sync_car.h[27m
+[7mgrep -n "pthread_" sync_car.c[27m
+[7mgrep -i "sem_" sync_car.c sync_car.h[27m[A[A]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ grep -c pthread_mutex_t sync_car.h
+grep -n "pthread_" sync_car.c
+grep -i "sem_" sync_car.c sync_car.h
+[?2004l1
+[32m[K5[m[K[36m[K:[m[K    [01;31m[Kpthread_[m[Kmutex_init(&station->lock, NULL);
+[32m[K6[m[K[36m[K:[m[K    [01;31m[Kpthread_[m[Kcond_init(&station->car_arrived, NULL);
+[32m[K7[m[K[36m[K:[m[K    [01;31m[Kpthread_[m[Kcond_init(&station->passenger_boarded, NULL);
+[32m[K17[m[K[36m[K:[m[K    [01;31m[Kpthread_[m[Kmutex_lock(&station->lock);
+[32m[K21[m[K[36m[K:[m[K    [01;31m[Kpthread_[m[Kcond_broadcast(&station->car_arrived);
+[32m[K25[m[K[36m[K:[m[K        [01;31m[Kpthread_[m[Kcond_wait(&station->passenger_boarded, &station->lock);
+[32m[K29[m[K[36m[K:[m[K    [01;31m[Kpthread_[m[Kmutex_unlock(&station->lock);
+[32m[K34[m[K[36m[K:[m[K    [01;31m[Kpthread_[m[Kmutex_lock(&station->lock);
+[32m[K38[m[K[36m[K:[m[K        [01;31m[Kpthread_[m[Kcond_wait(&station->car_arrived, &station->lock);
+[32m[K44[m[K[36m[K:[m[K    [01;31m[Kpthread_[m[Kmutex_unlock(&station->lock);
+[32m[K49[m[K[36m[K:[m[K    [01;31m[Kpthread_[m[Kmutex_lock(&station->lock);
+[32m[K53[m[K[36m[K:[m[K    [01;31m[Kpthread_[m[Kcond_signal(&station->passenger_boarded);
+[32m[K55[m[K[36m[K:[m[K    [01;31m[Kpthread_[m[Kmutex_unlock(&station->lock);
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mgcc -o /tmp/simul /tmp/simul.c sync_car.c -I. -pthread && /tmp/simul; echo "simul exit: $?"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -o /tmp/simul /tmp/simul.c sync_car.c -I. -pthread && /tmp/simul; echo "simul exit: $?"
+[?2004lSIMULTANEIDADE OK: 10 entraram antes do on_board e todos embarcaram
+simul exit: 0
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mls -la prints/[27mls -la prints/
+[?2004ltotal 52
+drwxrwxrwx 1 danie danie  4096 Nov  4 21:57 [0m[34;42m.[0m
+drwxrwxrwx 1 danie danie  4096 Nov  4 22:58 [34;42m..[0m
+-rwxrwxrwx 1 danie danie 11859 Nov  4 03:19 [01;32merro-early-return.png[0m
+-rwxrwxrwx 1 danie danie 38188 Nov  4 22:06 [01;32mvalidacao-final.png[0m
 [?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mexit[27mexit
 [?2004lexit
 
-Script done on 2026-11-04 15:06:58-03:00 [COMMAND_EXIT_CODE="0"]
+Script done on 2026-11-04 22:59:00-03:00 [COMMAND_EXIT_CODE="0"]
+car_arrived);
+[32m[K25[m[K[36m[K:[m[K        [01;31m[Kpthread_[m[Kcond_wait(&station->passenger_boarded, &station->lock);
+[32m[K29[m[K[36m[K:[m[K    [01;31m[Kpthread_[m[Kmutex_unlock(&station->lock);
+[32m[K34[m[K[36m[K:[m[K    [01;31m[Kpthread_[m[Kmutex_lock(&station->lock);
+[32m[K38[m[K[36m[K:[m[K        [01;31m[Kpthread_[m[Kcond_wait(&station->car_arrived, &station->lock);
+[32m[K44[m[K[36m[K:[m[K    [01;31m[Kpthread_[m[Kmutex_unlock(&station->lock);
+[32m[K49[m[K[36m[K:[m[K    [01;31m[Kpthread_[m[Kmutex_lock(&station->lock);
+[32m[K53[m[K[36m[K:[m[K    [01;31m[Kpthread_[m[Kcond_signal(&station->passenger_boarded);
+[32m[K55[m[K[36m[K:[m[K    [01;31m[Kpthread_[m[Kmutex_unlock(&station->lock);
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mgcc -o /tmp/simul /tmp/simul.c sync_car.c -I. -pthread && /tmp/simul; echo "simul exit: $?"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -o /tmp/simul /tmp/simul.c sync_car.c -I. -pthread && /tmp/simul; echo "simul exit: $?"
+[?2004lSIMULTANEIDADE OK: 10 entraram antes do on_board e todos embarcaram
+simul exit: 0
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mls -la prints/[27mls -la prints/
+[?2004ltotal 52
+drwxrwxrwx 1 danie danie  4096 Nov  4 21:57 [0m[34;42m.[0m
+drwxrwxrwx 1 danie danie  4096 Nov  4 22:58 [34;42m..[0m
+-rwxrwxrwx 1 danie danie 11859 Nov  4 03:19 [01;32merro-early-return.png[0m
+-rwxrwxrwx 1 danie danie 38188 Nov  4 22:06 [01;32mvalidacao-final.png[0m
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ [7mexit[27mexit
+[?2004lexit
+Script done.
+[?2004h]0;danie@PCDEDANIEL: /mnt/c/Users/danie/Sincronizacao[01;32mdanie@PCDEDANIEL[00m:[01;34m/mnt/c/Users/danie/Sincronizacao[00m$ exiyt[K[Kt
+[?2004lexit
+
+Script done on 2026-11-04 22:59:07-03:00 [COMMAND_EXIT_CODE="0"]

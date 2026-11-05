@@ -1,0 +1,7 @@
+# Garante LF nos arquivos de texto, mesmo com core.autocrlf=true no Windows.
+* text=auto eol=lf
+
+# Binarios
+*.png binary
+*.pdf binary
+*.docx binary
